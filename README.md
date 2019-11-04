@@ -20,6 +20,7 @@ start_http_server(9001)
 
 
 Then run the port_exporter as below;
+
 python3.4 port_exporter.py
 
 
