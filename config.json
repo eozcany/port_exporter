@@ -1,0 +1,9 @@
+--This is an example config file
+-- It is a format of python dictionaries of lists
+-- So port_exporter will check if below ports are available on mentioned servers.
+
+{
+"servera.example.com": ["80", "443"],
+"serverb.example.com": ["20"],
+"serverc.example.com": ["9000", "9010", "9090"]
+}
