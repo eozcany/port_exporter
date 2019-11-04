@@ -2,6 +2,7 @@
 Port exporter is a prometheus exporter, checks that a port is open or close for a remote host.
 You can use one of the port_exporter.py files up to your Linux distribution.
 
+
 Dependencies the server that you are planning to run port_exporter on:
 
 - It should have python 3 or above
@@ -24,12 +25,14 @@ Then run the port_exporter as below;
 python3.4 port_exporter.py
 
 
+
 Add port_exporter job to prometheus.yml file
 
   - job_name: 'port_exporter'  
     static_configs:
       - targets: ['your_hostname_or_ip_that_runs_port_exporter.py:9001']
-      
+  
+  
       
 Metrics:
 
