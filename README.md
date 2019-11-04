@@ -28,10 +28,11 @@ python3.4 port_exporter.py
 
 Add port_exporter job to prometheus.yml file
 
+```
   - job_name: 'port_exporter'  
     static_configs:
       - targets: ['your_hostname_or_ip_that_runs_port_exporter.py:9001']
-  
+  ```
   
       
 Metrics:
