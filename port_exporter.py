@@ -6,7 +6,7 @@ import time
 
 port_check_metric = Gauge('port_check','Check if port is working',["port","host"])
 
-targets = eval(open("/opt/prometheus-exporters/port_exporter/config.json").read())
+targets = eval(open("config.json").read())
 
 if __name__ == "__main__":
     start_http_server(9001)
